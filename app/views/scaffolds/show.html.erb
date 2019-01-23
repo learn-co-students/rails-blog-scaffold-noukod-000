@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Posts:</strong>
+  <%= @scaffold.posts %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @scaffold.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @scaffold.description %>
+</p>
+
+<%= link_to 'Edit', edit_scaffold_path(@scaffold) %> |
+<%= link_to 'Back', scaffolds_path %>
