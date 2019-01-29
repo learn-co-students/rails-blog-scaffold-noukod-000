@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-
+  resources :apartments
+#  get 'categories/show'
+  resources :posts #, only: [:index, :show, :new, :create, :edit, :update]
+  #resources :categories
+#  resources :apartments
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
