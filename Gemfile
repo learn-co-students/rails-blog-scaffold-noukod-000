@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'bundler'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use SCSS for stylesheets
@@ -40,10 +41,10 @@ group :test, :development do
   gem "better_errors"
   gem "sprockets_better_errors"
   gem "binding_of_caller"
-  gem "factory_girl_rails"
+  gem "factory_bot_rails"
   gem "simplecov"
   gem "database_cleaner"
-  gem "sqlite3"
+  gem "sqlite3", "~> 1.3.6"
   gem "pry"
   gem "guard-rspec", require: false
   gem "thin"
