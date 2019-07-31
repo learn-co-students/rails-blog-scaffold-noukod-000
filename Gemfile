@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # ruby '2.6.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.4'
+gem 'rails', '~> 4.2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '4.0.2'
 # Use Uglifier as compressor for JavaScript assets
@@ -45,7 +45,7 @@ group :test, :development do
   gem "factory_girl_rails"
   gem "simplecov"
   gem "database_cleaner"
-  gem "sqlite3"
+  gem "sqlite3", "~> 1.3.6"
   gem "pry"
   gem "guard-rspec", require: false
   gem "thin"
