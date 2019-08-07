@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Title</th>
       <th>Address</th>
       <th>Price</th>
       <th>Description</th>
@@ -16,6 +17,7 @@
   <tbody>
     <% @posts.each do |post| %>
       <tr>
+        <td><%= post.title %></td>
         <td><%= post.address %></td>
         <td><%= post.price %></td>
         <td><%= post.description %></td>
