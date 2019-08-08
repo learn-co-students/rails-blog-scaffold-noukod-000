@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.6'
+gem 'rails', '5'
 # Use SCSS for stylesheets
 gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
@@ -13,6 +14,7 @@ gem 'coffee-rails'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'rails-controller-testing'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder'
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -40,10 +42,10 @@ group :test, :development do
   gem "better_errors"
   gem "sprockets_better_errors"
   gem "binding_of_caller"
-  gem "factory_girl_rails"
+  gem "factory_bot_rails"
   gem "simplecov"
   gem "database_cleaner"
-  gem "sqlite3"
+  gem "sqlite3", "~> 1.3.6"
   gem "pry"
   gem "guard-rspec", require: false
   gem "thin"
